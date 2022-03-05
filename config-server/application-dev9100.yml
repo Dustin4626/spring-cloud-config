@@ -16,6 +16,6 @@ spring:
         name: springcloud-service-02-goods
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: {cipher}5b5c9eecae1d48af5c0c63cbc2d7592e43accaf8fff2537484c21706676bdf6a
+        password: 214626
         url: jdbc:mysql://localhost:3306/goodsdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
-        username: {cipher}435f324f3bcd1d2e35afc24805abd72a7d1fbe5374d09fc59b197d41470a9a5d
+        username: root
