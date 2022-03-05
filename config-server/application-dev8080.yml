@@ -1,0 +1,28 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+    instance:
+        instance-id: springcloud-service-04-portal
+        lease-expiration-duration-in-seconds: 10
+        lease-renewal-interval-in-seconds: 2
+        prefer-ip-address: true
+feign:
+    httpclient:
+        enabled: true
+        max-connections: 200
+        max-connections-per-route: 50
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 5000
+                timeout:
+                    enabled: true
+server:
+    port: 8080
+spring:
+    application:
+        name: springcloud-service-04-portal
