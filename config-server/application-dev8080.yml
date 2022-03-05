@@ -33,4 +33,4 @@ spring:
     name: springcloud-service-04-portal
 
 test:
-  refresh-string: test1
+  refresh-string: test1-fresh
