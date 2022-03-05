@@ -31,3 +31,6 @@ server:
 spring:
   application:
     name: springcloud-service-04-portal
+
+test:
+  refresh-string: test1
