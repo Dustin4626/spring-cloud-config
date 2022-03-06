@@ -1,0 +1,40 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: springcloud-service-04-portal-8081
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 2
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+        timeout:
+          enabled: true
+server:
+  port: 8081
+spring:
+  application:
+    name: springcloud-service-04-portal
+  rabbitmq:
+    password: guest
+    port: '5672'
+    host: 192.168.10.128
+    username: guest
+test:
+  refresh-string: test1-fresh-8081
