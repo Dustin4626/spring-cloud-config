@@ -37,4 +37,4 @@ spring:
     host: localhost
     username: guest
 test:
-  refresh-string: test1-fresh-8080
+  refresh-string: test1-fresh-8080-go
