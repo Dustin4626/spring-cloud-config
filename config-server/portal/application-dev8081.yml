@@ -26,6 +26,11 @@ hystrix:
             timeoutInMilliseconds: 5000
         timeout:
           enabled: true
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 3000
+  
 server:
   port: 8081
 spring:
