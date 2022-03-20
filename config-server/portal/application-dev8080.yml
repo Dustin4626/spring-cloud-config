@@ -35,7 +35,7 @@ server:
   port: 8080
 spring:
   application:
-    name: springcloud-service-04-portal
+    name: springcloud-service-04-portal-1
   rabbitmq:
     password: 214626
     port: '5672'
